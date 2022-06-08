@@ -1,5 +1,5 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
-    new_matrix = [[i**2 for i in row] for row i matrix]
-    return new_matrix
-
+    if not matrix:
+        print()
+    return [[item**2 for item in row] for row in matrix]
